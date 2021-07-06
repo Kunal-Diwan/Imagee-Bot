@@ -1,0 +1,49 @@
+{
+    "name": "Imagee",
+    "description": "A Bot that can Edit Images in various modes",
+    "logo": "https://telegra.ph/file/a66be5d23bf3cb516da9e.jpg",
+    "keywords": [
+        "Image",
+        "Editor",
+        "Telegram Bot",
+        "DevelopedBots"
+    ],
+    "website": "https://github.com/DevelopedBots",
+    "repository": "https://github.com/Kunal-Diwan/Imagee-Bot",
+    "success_url": "https://telegram.dog/DevelopedBots",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "RemoveBG_API": {
+            "description": "Get this api from https://www.remove.bg/b/background-removal-api",
+            "value": "",
+            "required": false
+        },
+        "WEBHOOK": {
+            "description": "Set this Value to 'ANYTHING'. Don't Change it",
+            "value": "ANYTHING"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
